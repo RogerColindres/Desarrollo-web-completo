@@ -10,88 +10,127 @@
     <!--Etiquetas H y P como formas de inclusion de texto, cabe resaltar que la etiqueta h1 se utiliza para
     el contenido princial de la pagina ademas esta misma se incluye o se indexa al momento de hacer la busqueda,
     el codigo html se ejecuta de arriba hacia abajo-->
-    
-    <a href="nosotros.html">Nosotros</a><!--Representa un hiperenlace a otro recurso, 
-        ya sean paginas en la web o dentro de nuestro mismo proyecto-->
-    <a href="anuncios.html">Anuncios</a>
-    <a href="blog.html">Blog</a>
-    <a href="contacto.hmtl">Contacto</a>
+    <header><!--Cabecera del body-->
+        <a href="/BieneRaises/">
+            <img src="img/logo.svg" alt="Logotipo de bienes raices">
+        </a>
+        <nav>
+            <a href="nosotros.html">Nosotros</a><!--Representa un hiperenlace a otro recurso, 
+            ya sean paginas en la web o dentro de nuestro mismo proyecto-->
+            <a href="anuncios.html">Anuncios</a>
+            <a href="blog.html">Blog</a>
+            <a href="contacto.hmtl">Contacto</a>
+        </nav>
 
     <h1>Venta de casas y departamentos exclusivos e lujo</h1>
+    </header>
 
-    <h2>Más sobre nosotros</h2>
+    <section><!--Sirve para agrupar secciones de contedino-->
+        <h2>Más sobre nosotros</h2>
 
-    <h3>Seguridad</h3>
+        <div> <!--agrupar contenido de un solo tema por ejemplo-->
+            <img src="img/icono1.svg" alt="Icono de seguridad">
+            <h3>Seguridad</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, 
+            veniam rem. Consectetur tempora cum ut repellendus necessitatibus non, 
+            fugit voluptatibus numquam pariatur? Totam porro ratione consequatur 
+            ipsa architecto libero eum.</p>
+        </div>
 
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, 
-    veniam rem. Consectetur tempora cum ut repellendus necessitatibus non, 
-    fugit voluptatibus numquam pariatur? Totam porro ratione consequatur 
-    ipsa architecto libero eum.</p>
+        <div>
+            <img src="img/icono2.svg" alt="Icono de mejor precio">
+            <h3>El mejor precio</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, 
+            veniam rem. Consectetur tempora cum ut repellendus necessitatibus non, 
+            fugit voluptatibus numquam pariatur? Totam porro ratione consequatur 
+            ipsa architecto libero eum.</p>
+        </div>
 
-    <h3>El mejor precio</h3>
+        <div>
+            <img src="img/icono3.svg" alt="Icono de tiempo">
+            <h3>Tiempo</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, 
+            veniam rem. Consectetur tempora cum ut repellendus necessitatibus non, 
+            fugit voluptatibus numquam pariatur? Totam porro ratione consequatur 
+            ipsa architecto libero eum.</p>
+        </div>
+    </section>
 
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, 
-    veniam rem. Consectetur tempora cum ut repellendus necessitatibus non, 
-    fugit voluptatibus numquam pariatur? Totam porro ratione consequatur 
-    ipsa architecto libero eum.</p>
+    <main><!--se utliza para el contenido principal de la pagina-->
+        <h2>Casas y Departamentos en venta</h2>
+        <div>
+            <img src="img/anuncio1.jpg" alt="Anuncio casa en el lago">
+            <h3>Casa de lujo en el lago</h3>
+            <p>Casa en el lago con excelente vista, acabados de lujo a un excelente precio</p>
+            <p>$3,000,000</p>
+            <a href="#">Ver Propiedad</a>
+        </div>
 
-    <h3>Tiempo</h3>
+        <div>
+            <img src="img/anuncio2.jpg" alt="Anuncio casa terminados de lujo">
+            <h3>Casa terminados de lujo</h3>
+            <p>Casa con diseño moderno, asi como tecnologia inteligente y amueblada</p>
+            <p>$2,000,000</p>
+            <a href="#">Ver Propiedad</a>
+        </div>
 
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, 
-    veniam rem. Consectetur tempora cum ut repellendus necessitatibus non, 
-    fugit voluptatibus numquam pariatur? Totam porro ratione consequatur 
-    ipsa architecto libero eum.</p>
+        <div>
+            <img src="img/anuncio3.jpg" alt="Anuncio casa con alberca">
+            <h3>Casa con alberca</h3>
+            <p>Casa con alberca y acabados de lujo en la ciudad, excelente oportunidad</p>
+            <p>$3,000,000</p>
+            <a href="#">Ver Propiedad</a>
+        </div>
 
-    <h2>Casas y Departamentos en venta</h2>
+        <a href="anuncios.html">Ver Todas</a>
+    </main>
 
-    <h3>Casa de lujo en el lago</h3>
-    <p>Casa en el lago con excelente vista, acabados de lujo a un excelente precio</p>
-    <p>$3,000,000</p>
-    <a href="#">Ver Propiedad</a>
-
-    <h3>Casa terminados de lujo</h3>
-    <p>Casa con diseño moderno, asi como tecnologia inteligente y amueblada</p>
-    <p>$2,000,000</p>
-    <a href="#">Ver Propiedad</a>
-
-    <h3>Casa con alberca</h3>
-    <p>Casa con alberca y acabados de lujo en la ciudad, excelente oportunidad</p>
-    <p>$3,000,000</p>
-    <a href="#">Ver Propiedad</a>
-
-    <a href="anuncios.html">Ver Todas</a>
-
+    <section>
     <h2>Encuentra la casa de tus sueños</h2>
     <p>LLena el formulario de contacto y un asesor se pondra en contacto contigo 
     a la brevedad</p>
-
     <a href="contacto.html">Contactanos</a>
-    
-    <h3>Nuestro Blog</h3>
-    <h4>Terraza en el techo de tu casa</h4>
-    <p>Escrito el: <em>20/10/2019</em>  por: <em>admin</em></p>
-    <p>Consejos para construir una terraza en el teho de tu casa, con los mejores materiales
-    y ahorrando dinero </p>
-    
-    <h4>Guia para la decoracion de tu hogar</h4>
-    <p>Escrito el: <em>20/10/2019</em>  por: <em>admin</em></p>
-    <p>Maximiza el espacio en tu hogar con esta guia, aprende a 
-    combinar muebles y colores para darle vida a tu espacio</p>
+    </section>
 
+
+    <section>
+        <h3>Nuestro Blog</h3>
+        
+        <article><!--se utiliza para agrupar contenido aparte de la pagina, ejemplo blogs, foros-->
+            <img src="img/blog1.jpg" alt="Entada de blog">
+            <h4>Terraza en el techo de tu casa</h4>
+            <p>Escrito el: <em>20/10/2019</em>  por: <em>admin</em></p>
+            <p>Consejos para construir una terraza en el teho de tu casa, con los mejores materiales
+            y ahorrando dinero </p>
+        </article>
+        
+        <article>
+            <img src="img/blog2.jpg" alt="Entada de blog">
+            <h4>Guia para la decoracion de tu hogar</h4>
+            <p>Escrito el: <em>20/10/2019</em>  por: <em>admin</em></p>
+            <p>Maximiza el espacio en tu hogar con esta guia, aprende a 
+            combinar muebles y colores para darle vida a tu espacio</p>
+        </article>
+    </section>
+
+    <section>
     <h3>Testimoniales</h3>
     <blockquote>
         El personal se comporto de una excelente forma, muy buena atención 
         y la casa que me ofrecieron cumple con todas mis expectativas
     </blockquote>
     <p>-Roger Colindres</p>
+    </section>
 
-    <a href="nosotros.html">Nosotros</a>
-    <a href="anuncios.html">Anuncios</a>
-    <a href="blog.html">Blog</a>
-    <a href="contacto.hmtl">Contacto</a>
-
-    <p>Todos los derechos reservados 2019 &copy;</p>
-
+    <footer><!--se utliza para el pie de pagina-->
+        <nav>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="anuncios.html">Anuncios</a>
+            <a href="blog.html">Blog</a>
+            <a href="contacto.hmtl">Contacto</a>
+        </nav>  
+        <p>Todos los derechos reservados 2019 &copy;</p>
+    </footer>    
 
 </body>
 </html>
