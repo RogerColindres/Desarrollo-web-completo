@@ -4,25 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/miestilo.css">
     <title>Bienes Raices</title>
 </head>
 <body>
     <!--Etiquetas H y P como formas de inclusion de texto, cabe resaltar que la etiqueta h1 se utiliza para
     el contenido princial de la pagina ademas esta misma se incluye o se indexa al momento de hacer la busqueda,
     el codigo html se ejecuta de arriba hacia abajo-->
-    <header><!--Cabecera del body-->
-        <a href="/BieneRaises/">
-            <img src="img/logo.svg" alt="Logotipo de bienes raices">
-        </a>
-        <nav>
-            <a href="nosotros.html">Nosotros</a><!--Representa un hiperenlace a otro recurso, 
-            ya sean paginas en la web o dentro de nuestro mismo proyecto-->
-            <a href="anuncios.html">Anuncios</a>
-            <a href="blog.html">Blog</a>
-            <a href="contacto.hmtl">Contacto</a>
-        </nav>
+    <header class="site-header inicio"><!--Cabecera del body-->
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/BieneRaises/">
+                    <img src="img/logo.svg" alt="Logotipo de bienes raices">
+                </a>
+                <nav class="navegacion">
+                    <a href="nosotros.html">Nosotros</a><!--Representa un hiperenlace a otro recurso, 
+                    ya sean paginas en la web o dentro de nuestro mismo proyecto-->
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.hmtl">Contacto</a>
+                </nav>
+            </div>
 
-    <h1>Venta de casas y departamentos exclusivos e lujo</h1>
+            <h1>Venta de casas y departamentos exclusivos e lujo</h1>
+        </div>
     </header>
 
     <section><!--Sirve para agrupar secciones de contedino-->
@@ -30,7 +37,7 @@
 
         <div> <!--agrupar contenido de un solo tema por ejemplo-->
             <img src="img/icono1.svg" alt="Icono de seguridad">
-            <h3>Seguridad</h3>
+            <h3 >Seguridad</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, 
             veniam rem. Consectetur tempora cum ut repellendus necessitatibus non, 
             fugit voluptatibus numquam pariatur? Totam porro ratione consequatur 
@@ -123,7 +130,7 @@
     </section>
 
     <footer><!--se utliza para el pie de pagina-->
-        <nav>
+        <nav class="navegacion">
             <a href="nosotros.html">Nosotros</a>
             <a href="anuncios.html">Anuncios</a>
             <a href="blog.html">Blog</a>
