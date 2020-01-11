@@ -21,6 +21,21 @@ h1{
     font-size: 3.8rem;    
 }
 
+/**utilidades**/
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+.fw-300{
+    font-weight: 300;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+
 /*header*/
 .site-header.inicio{
     background-image: url(../img/header.jpg);/*imagen de fondo*/
@@ -62,4 +77,21 @@ h1{
 }
 .navegacion a:last-of-type{/*contiene un seudo selector, para eliminar el margen derecho al ultimi elemento de a*/
     margin-right: 0;
+}
+
+/**iconos nosotros**/
+.iconos-nosotros{
+    display: flex;
+    justify-content: space-between;/*reparte espacio entre los elementos del contenedor
+    mediante flexbox*/
+}
+
+.iconos{
+    flex-basis: calc(33.3% - 1rem);/*sirve para dividir espacios iguales para diferentes elementos*/
+    text-align: center;
+    line-height: 1.5;
+}
+
+.iconos h3{
+    text-transform: uppercase;/*cambia las letras a mayusculas*/
 }
