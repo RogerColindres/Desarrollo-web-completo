@@ -1,10 +1,11 @@
 html{
     font-size: 62.5%;/*resetea para rems donde 1 rems = 10px*/
     /*se utiliza para dejar el uso de pixeles por rems*/
+    /*reset para para REMS 62.5% = 10px de 16px, por lo tanto 1 rems = 10px */
 }
 
-body{
-    font-family: 'Lato', sans-serif;
+body{/*selector que se aplica a todos los elementos de un body*/
+    font-family: 'Lato', sans-serif;/*aplicamos nueva fuente de google font, gratis*/
     font-size: 1.6rem;/*volvemos al tamaño original 1.6rem= 16px*/
     /*Agregamos una nueva fuente desde google font linkeando 
     desde el index y copiando el font-family desde google font*/
@@ -12,8 +13,8 @@ body{
 
 /*globales*/
 .contenedor{
-    max-width: 120rem;
-    margin:0 auto;
+    max-width: 120rem;/*toma todo el espacio disponibles sin pasar de 120rem*/
+    margin:0 auto;/*centramos la barra que contiene el icono y la barra de navegacion*/
 }
 
 h1{
@@ -22,16 +23,17 @@ h1{
 
 /*header*/
 .site-header.inicio{
-    background-image: url(../img/header.jpg);
-    background-position: center center;
-    background-size: cover;
-    height: 100vh;
-    min-height: 60rem;
+    background-image: url(../img/header.jpg);/*imagen de fondo*/
+    background-position: center center;/*posicion del fondo, en este caso la imagen de fondo*/
+    background-size: cover;/*permite tomar el tamaño en altura y ancho pero siempre guardando 
+    las proporciones en este caso de la imagen de fondo*/
+    height: 100vh;/*permite obtener la altura completa de tu pantalla*/
+    min-height: 60rem;/*medida minima para la pantalla en base a rems = 600pixeles*/
 }
 .contenido-header{
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    display: flex;/*habilitamos felxbox*/
+    flex-direction: column;/*estamos trabajando el contenido en columnas*/
     justify-content: space-between;
 }
 
@@ -43,21 +45,21 @@ h1{
 }
 
 .barra{
-    display: flex;
+    display: flex;/*habilitamos el uso de flex*/
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /*alinea los elementos*/
     padding-top: 3rem;
 }
 /*navegacion*/
-.navegacion a {
+.navegacion a {/*el elemento a representa a los elementos hijos de la clase navegacion*/
     color:white;
     text-decoration: none;
     font-size: 2rem;
     margin-right: 2rem;
 }
-.navegacion a:hover{
-    color: brown;
+.navegacion a:hover{/*contiene un seudo selector, para dar animacion a los elementos a*/
+    color:lawngreen;
 }
-.navegacion a:last-of-type{
-    margin: 0;
+.navegacion a:last-of-type{/*contiene un seudo selector, para eliminar el margen derecho al ultimi elemento de a*/
+    margin-right: 0;
 }
