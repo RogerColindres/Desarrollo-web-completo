@@ -4,12 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/miestilo.css">
-    <title>Nosotros</title>
+    <title>Bienes Raices</title>
 </head>
 <body>
-    <h1>Nosotros</h1>
-    <a href="index.html">Volver</a>
-    
+    <!--Etiquetas H y P como formas de inclusion de texto, cabe resaltar que la etiqueta h1 se utiliza para
+    el contenido princial de la pagina ademas esta misma se incluye o se indexa al momento de hacer la busqueda,
+    el codigo html se ejecuta de arriba hacia abajo-->
+    <header class="site-header"><!--Cabecera del body, declaramos dos clases orientadas al 
+        diseño del inicio de la pagina-->
+        <div class="contenedor contenido-header"><!--contenido total del header-->
+            <div class="barra"><!--contenido de logo y la barra de avegacion-->
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="Logotipo de bienes raices">
+                </a>
+                <nav class="navegacion">
+                    <a href="nosotros.html">Nosotros</a><!--Representa un hiperenlace a otro recurso, 
+                    ya sean paginas en la web o dentro de nuestro mismo proyecto-->
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.hmtl">Contacto</a>
+                </nav>
+            </div>
+        </div><!--contenedor-->
+    </header>
+
+    <main class="contenedor">
+        <h1 class="centrar-texto fw-300">Conoce sobre nosotros</h1>
+
+        <div class="contenido-nosotros">
+            <div class="imagen">
+                <img src="img/nosotros.jpg" alt="Imagen sobre nosotros">
+            </div>
+            <div class="texto-nosotros">
+                <blockquote>
+                    25 años de experiencia
+                </blockquote>
+                <p>Nullam tincidunt mi quis mi pretium convallis. Sed hendrerit aliquam varius. 
+                    Mauris massa leo, facilisis eget egestas quis, sodales eget augue. Maecenas
+                     vel orci maximus, iaculis erat sit amet, consectetur purus. Quisque vitae 
+                     vehicula magna. Aenean et nunc imperdiet, consectetur ex porttitor, congue lacus.
+                      Sed nec felis ac ipsum porttitor feugiat.
+                </p>
+                <p>Praesent placerat sed orci eu tincidunt. Nunc varius odio in lobortis ornare. 
+                    Suspendisse sit amet magna ut odio faucibus tincidunt sagittis et orci. 
+                    Mauris vehicula nec neque sed vehicula. Donec nisl enim, hendrerit quis commodo eu, 
+                    cursus vitae libero. Fusce tincidunt neque a orci semper porttitor. 
+                    Sed pulvinar quam quis efficitur aliquam. Nulla eu mauris nulla. 
+                    Mauris rhoncus vehicula ante in tempus. Aliquam dictum congue lorem, 
+                    sit amet convallis tellus lobortis id. Nulla vitae odio id tortor consequat 
+                    rhoncus tristique a libero.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <section class="contenedor seccion"><!--Sirve para agrupar secciones de contedino-->
+        <h2 class="fw-300 centrar-texto">Más sobre nosotros</h2>
+
+        <div class="iconos-nosotros">
+            <div class="iconos"> <!--agrupar contenido de un solo tema por ejemplo-->
+                <img src="img/icono1.svg" alt="Icono de seguridad">
+                <h3 >Seguridad</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, 
+                veniam rem. Consectetur tempora cum ut repellendus necessitatibus non, 
+                fugit voluptatibus numquam pariatur? Totam porro ratione consequatur 
+                ipsa architecto libero eum.</p>
+            </div>
+
+            <div class="iconos">
+                <img src="img/icono2.svg" alt="Icono de mejor precio">
+                <h3>El mejor precio</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, 
+                veniam rem. Consectetur tempora cum ut repellendus necessitatibus non, 
+                fugit voluptatibus numquam pariatur? Totam porro ratione consequatur 
+                ipsa architecto libero eum.</p>
+            </div>
+
+            <div class="iconos">
+                <img src="img/icono3.svg" alt="Icono de tiempo">
+                <h3>Tiempo</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, 
+                veniam rem. Consectetur tempora cum ut repellendus necessitatibus non, 
+                fugit voluptatibus numquam pariatur? Totam porro ratione consequatur 
+                ipsa architecto libero eum.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer seccion"><!--se utliza para el pie de pagina-->
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Anuncios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.hmtl">Contacto</a>
+            </nav>  
+            <p class="copyright">Todos los derechos reservados 2019 &copy;</p>
+        </div>
+    </footer>    
+
 </body>
 </html>

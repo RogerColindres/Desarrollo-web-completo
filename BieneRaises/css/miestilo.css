@@ -69,6 +69,10 @@ img{
 }
 
 /*header*/
+.site-header{
+    background-color: #333333;
+    padding: 1rem 0 3rem 0;
+}
 .site-header.inicio{
     background-image: url(../img/header.jpg);/*imagen de fondo*/
     background-position: center center;/*posicion del fondo, en este caso la imagen de fondo*/
@@ -306,4 +310,22 @@ img{
 .copyright{
     margin: 0;
     color: white;
+}
+
+/*paginas internas*/
+/*pagina nosotros*/
+
+.contenido-nosotros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);/*la funcion repeat recibe el numero de columnas en este caso 2
+    y le asigana a cada una fraccion de contenedor (1fr), que es lo mismo que asignar el 50% a cada una de
+    las columnas en este caso por ser dos unicamente*/
+    grid-column-gap:2rem;
+}
+
+.texto-nosotros blockquote{
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 3rem 0;
 }
