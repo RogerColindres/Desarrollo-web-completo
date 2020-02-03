@@ -45,7 +45,12 @@ img{
     text-align: center;
 }
 .d-block{
-    display: block!important;/*permitimos que boton amarillo tome el tamaño completo del contenedor*/
+    display: block!important;/*permitimos que boton amarillo tome el tamaño completo del contenedor
+    al que pertenece o el generado por el elemento padre que contiene el boton*/
+}
+
+.contenido-centrado{
+    max-width: 80rem;
 }
 
 /*Botones*/
@@ -73,17 +78,17 @@ img{
     background-color: #333333;
     padding: 1rem 0 3rem 0;
 }
-.site-header.inicio{
+.site-header.inicio{/*se tienen dos clases juntas y se les esta aplicando un mismo estilo a las dos*/
     background-image: url(../img/header.jpg);/*imagen de fondo*/
     background-position: center center;/*posicion del fondo, en este caso la imagen de fondo*/
-    background-size: cover;/*permite tomar el tamaño en altura y ancho pero siempre guardando 
-    las proporciones en este caso de la imagen de fondo*/
+    background-size: cover;/*escala la imagen de fondo para que el area de contenido este 
+    totalmente cubierta con la imagen de fondo*/
     height: 100vh;/*permite obtener la altura completa de tu pantalla*/
     min-height: 60rem;/*medida minima para la pantalla en base a rems = 600pixeles*/
 }
 .contenido-header{
     height: 100%;
-    display: flex;/*habilitamos felxbox*/
+    display: flex;/*habilitamos flexbox*/
     flex-direction: column;/*estamos trabajando el contenido en columnas*/
     justify-content: space-between;
 }
@@ -137,12 +142,17 @@ img{
 .contenedor-anuncios{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .anuncio{
-    flex-basis: calc(33.3% - 1rem);
+    /*flex: flex-grow: para que el contenido cresca, flex-shrink: para que el contenido se haga pequeño, flex-basis: tamaño base;;;*/
+    flex: 0 0 calc(33.3% - 1rem);
+    /*flex-shrink: 0;
+    flex-basis: calc(33.3% - 1rem);*/
     border: solid gray 2px;
     background-color: rgb(241, 241, 238);
+    margin-bottom: 2rem;
 }
 
 .contenido-anuncio{
@@ -170,6 +180,8 @@ img{
     padding: 0;
     display: flex;
     justify-content: space-evenly;
+    max-width: 50rem;
+    flex: 1;
 }
 
 .iconos-caracteristicas li{
@@ -314,18 +326,23 @@ img{
 
 /*paginas internas*/
 /*pagina nosotros*/
-
 .contenido-nosotros{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);/*la funcion repeat recibe el numero de columnas en este caso 2
-    y le asigana a cada una fraccion de contenedor (1fr), que es lo mismo que asignar el 50% a cada una de
-    las columnas en este caso por ser dos unicamente*/
-    grid-column-gap:2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
 }
 
 .texto-nosotros blockquote{
     font-weight: 900;
     font-size: 2rem;
     margin: 0;
-    padding: 3rem 0;
+    padding: 0 0 3rem 3;
+
+}
+
+/*pagina anuncio*/
+.resumen-propiedad{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
