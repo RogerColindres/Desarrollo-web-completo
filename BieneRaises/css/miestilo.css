@@ -1,99 +1,132 @@
-html{
-    font-size: 62.5%;/*resetea para rems donde 1 rems = 10px*/
+html {
+    font-size: 62.5%;
+    /*resetea para rems donde 1 rems = 10px*/
     /*se utiliza para dejar el uso de pixeles por rems*/
     /*reset para para REMS 62.5% = 10px de 16px, por lo tanto 1 rems = 10px */
 }
 
-body{/*selector que se aplica a todos los elementos de un body*/
-    font-family: 'Lato', sans-serif;/*aplicamos nueva fuente de google font, gratis*/
-    font-size: 1.6rem;/*volvemos al tamaño original 1.6rem= 16px*/
+body {
+    /*selector que se aplica a todos los elementos de un body*/
+    font-family: 'Lato', sans-serif;
+    /*aplicamos nueva fuente de google font, gratis*/
+    font-size: 1.6rem;
+    /*volvemos al tamaño original 1.6rem= 16px*/
     /*Agregamos una nueva fuente desde google font linkeando 
     desde el index y copiando el font-family desde google font*/
 }
 
+
 /*globales*/
-.contenedor{
-    max-width: 120rem;/*toma todo el espacio disponibles sin pasar de 120rem o 1200px*/
-    margin:0 auto;/*centramos la barra que contiene el icono y la barra de navegacion*/
+
+.contenedor {
+    max-width: 120rem;
+    /*toma todo el espacio disponibles sin pasar de 120rem o 1200px*/
+    margin: 0 auto;
+    /*centramos la barra que contiene el icono y la barra de navegacion*/
 }
 
-h1{
-    font-size: 3.8rem;    
+h1 {
+    font-size: 3.8rem;
 }
-h3{
-    font-size: 3rem;
+
+h2 {
+    font-size: 3.4rem;
 }
-h4{
+
+h3 {
     font-size: 3rem;
 }
 
-img{
-   max-width: 100%;
+h4 {
+    font-size: 2.6rem;
 }
+
+img {
+    max-width: 100%;
+}
+
 
 /**utilidades**/
-.seccion{
+
+.seccion {
     margin-top: 2rem;
     margin-bottom: 2rem;
-
 }
-.fw-300{
+
+.fw-300 {
     font-weight: 300;
 }
 
-.centrar-texto{
+.centrar-texto {
     text-align: center;
 }
-.d-block{
-    display: block!important;/*permitimos que boton amarillo tome el tamaño completo del contenedor
+
+.d-block {
+    display: block!important;
+    /*permitimos que boton amarillo tome el tamaño completo del contenedor
     al que pertenece o el generado por el elemento padre que contiene el boton*/
 }
 
-.contenido-centrado{
+.contenido-centrado {
     max-width: 80rem;
 }
 
+
 /*Botones*/
-.boton{
+
+.boton {
     color: white;
     font-weight: 700;
     text-decoration: none;
     font-size: 1.8rem;
     padding: 1rem;
     margin-top: 3rem;
-    display:inline-block;/*damos la opcion de poder aplicar un ancho a las etiquetas inline como <a>*/
+    display: inline-block;
+    /*damos la opcion de poder aplicar un ancho a las etiquetas inline como <a>*/
     text-align: center;
     border: none;
 }
-.boton:hover{
+
+.boton:hover {
     cursor: pointer;
 }
 
-.boton-amarillo{
-    background-color:darkorange;
+.boton-amarillo {
+    background-color: darkorange;
 }
 
-.boton-verde{
-    background-color:darkgreen;
+.boton-verde {
+    background-color: darkgreen;
 }
+
 
 /*header*/
-.site-header{
+
+.site-header {
     background-color: #333333;
     padding: 1rem 0 3rem 0;
 }
-.site-header.inicio{/*se tienen dos clases juntas y se les esta aplicando un mismo estilo a las dos*/
-    background-image: url(../img/header.jpg);/*imagen de fondo*/
-    background-position: center center;/*posicion del fondo, en este caso la imagen de fondo*/
-    background-size: cover;/*escala la imagen de fondo para que el area de contenido este 
-    totalmente cubierta con la imagen de fondo*/
-    height: 100vh;/*permite obtener la altura completa de tu pantalla*/
-    min-height: 60rem;/*medida minima para la pantalla en base a rems = 600pixeles*/
+
+.site-header.inicio {
+    /*se tienen dos clases juntas y se les esta aplicando un mismo estilo a las dos*/
+    background-image: url(../img/header.jpg);
+    /*imagen de fondo*/
+    background-position: center center;
+    /*posicion del fondo, en este caso la imagen de fondo*/
+    background-size: cover;
+    /*el tamaño de la imagen cubre todo el tamaño de la pantalla*/
+    height: 100vh;
+    /*permite obtener la altura completa de tu pantalla*/
+    min-height: 60rem;
+    /*medida minima para la pantalla en base a rems = 600pixeles*/
 }
-.contenido-header{
+
+.contenido-header {
     height: 100%;
-    display: flex;/*habilitamos flexbox*/
-    flex-direction: column;/*estamos trabajando el contenido en columnas*/
+    display: flex;
+    /*habilitamos flexbox*/
+    flex-direction: column;
+    /*estamos trabajando el contenido en columnas*/
     justify-content: space-between;
 }
 
@@ -104,52 +137,70 @@ img{
     line-height: 2;
 }
 
-.barra{
-    display: flex;/*habilitamos el uso de flex*/
+.barra {
+    display: flex;
+    /*habilitamos el uso de flexblox*/
     justify-content: space-between;
-    align-items: center; /*alinea los elementos*/
+    /*alineacion horizontal*/
+    align-items: center;
+    /*alineacion vertical*/
     padding-top: 3rem;
 }
+
+
 /*navegacion*/
-.navegacion a {/*el elemento a representa a los elementos hijos de la clase navegacion*/
-    color:white;
+
+.navegacion a {
+    /*el elemento a representa a los elementos hijos de la clase navegacion*/
+    color: white;
     text-decoration: none;
     font-size: 2rem;
     margin-right: 2rem;
 }
-.navegacion a:hover{/*contiene un seudo selector, para dar animacion a los elementos a*/
-    color:lawngreen;
+
+.navegacion a:hover {
+    /*contiene un seudo selector, para dar animacion a los elementos a*/
+    color: lawngreen;
 }
-.navegacion a:last-of-type{/*contiene un seudo selector, para eliminar el margen derecho al ultimi elemento de a*/
+
+.navegacion a:last-of-type {
+    /*contiene un seudo selector, para eliminar el margen derecho al ultimi elemento de a*/
     margin-right: 0;
 }
 
+
 /**iconos nosotros**/
-.iconos-nosotros{
+
+.iconos-nosotros {
     display: flex;
-    justify-content: space-between;/*reparte espacio entre los elementos del contenedor
+    justify-content: space-between;
+    /*reparte espacio entre los elementos del contenedor
     mediante flexbox*/
 }
 
-.iconos{
-    flex-basis: calc(33.3% - 1rem);/*sirve para dividir espacios iguales para diferentes elementos,
+.iconos {
+    flex-basis: calc(33.3% - 1rem);
+    /*sirve para dividir espacios iguales para diferentes elementos,
     ademas para que los elementos se ajusten de manera responsiva al tamaño del contenedor principal*/
     text-align: center;
     line-height: 1.5;
 }
 
-.iconos h3{
-    text-transform: uppercase;/*cambia las letras a mayusculas*/
+.iconos h3 {
+    text-transform: uppercase;
+    /*cambia las letras a mayusculas*/
 }
 
+
 /*Anuncios*/
-.contenedor-anuncios{
+
+.contenedor-anuncios {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.anuncio{
+.anuncio {
     /*flex: flex-grow: para que el contenido cresca, flex-shrink: para que el contenido se haga pequeño, flex-basis: tamaño base;;;*/
     flex: 0 0 calc(33.3% - 1rem);
     /*flex-shrink: 0;
@@ -159,27 +210,29 @@ img{
     margin-bottom: 2rem;
 }
 
-.contenido-anuncio{
+.contenido-anuncio {
     padding: 2rem;
-    line-height: 2;/*tamaño de separacion entre lineas*/
+    line-height: 2;
+    /*tamaño de separacion entre lineas*/
 }
 
-.contenido-anuncio h3, 
-.contenido-anuncio p{
+.contenido-anuncio h3,
+.contenido-anuncio p {
     margin: 0;
 }
 
-.precio{
-    color:darkred;
+.precio {
+    color: darkred;
     font-weight: 800;
 }
 
-.ver-todas{
+.ver-todas {
     display: flex;
-    justify-content:flex-end;/*Alineamos elementos a la izquierda, usando flexblox*/
+    justify-content: flex-end;
+    /*Alineamos elementos a la izquierda, usando flexblox*/
 }
 
-.iconos-caracteristicas{
+.iconos-caracteristicas {
     list-style: none;
     padding: 0;
     display: flex;
@@ -188,25 +241,26 @@ img{
     flex: 1;
 }
 
-.iconos-caracteristicas li{
+.iconos-caracteristicas li {
     display: flex;
-    
 }
 
-.iconos-caracteristicas li img{
+.iconos-caracteristicas li img {
     margin-right: 2rem;
 }
 
-.cantidad{
+.cantidad {
     font-weight: 900;
 }
 
 
 /*contacto*/
-.imagen-contacto{
+
+.imagen-contacto {
     background-image: url(../img/encuentra.jpg);
     background-position: center center;
-    background-size: cover;/*cambiamos el tamaño de la imagen para cubrir el contenedor,
+    background-size: cover;
+    /*cambiamos el tamaño de la imagen para cubrir el contenedor,
     ubica la imagen en el contenedor para visualizarlo de la mejor manera posible*/
     height: 40rem;
     display: flex;
@@ -214,88 +268,91 @@ img{
 }
 
 .contenido-contacto {
-    flex: 1;/*factor de crecimiento, asigna tamaño de manera equitativa por elemento, */
+    flex: 1;
+    /*factor de crecimiento, asigna tamaño de manera equitativa por elemento, */
     color: white;
 }
 
-.contenido-contacto p{
-    font-size: 1.8rem ;/*tamaño de fuente*/
+.contenido-contacto p {
+    font-size: 1.8rem;
+    /*tamaño de fuente*/
 }
 
+
 /*seccion inferior*/
-.seccion-inferior{
+
+.seccion-inferior {
     display: flex;
     justify-content: space-between;
 }
 
-.seccion-inferior .blog{
+.seccion-inferior .blog {
     flex-basis: 60%;
 }
 
-.seccion-inferior .testimoniales{
+.seccion-inferior .testimoniales {
     flex-basis: calc(40% - 2rem);
 }
 
-.entrada-blog{
+.entrada-blog {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
 }
 
-.entrada-blog:last-of-type{
+.entrada-blog:last-of-type {
     margin-bottom: 0;
 }
 
-.entrada-blog .imagen{
+.entrada-blog .imagen {
     flex-basis: 40%;
 }
 
-.entrada-blog .texto-entrada{
+.entrada-blog .texto-entrada {
     flex-basis: calc(60% - 3rem);
-    
 }
 
-.texto-entrada a{
+.texto-entrada a {
     color: black;
     text-decoration: none;
 }
 
-.texto-entrada h4{
+.texto-entrada h4 {
     margin: 0;
 }
 
-.texto-entrada h4::after{/*pseudo elementos, se nombran asi porq no se pueden seleccionar,
+.texto-entrada h4::after {
+    /*pseudo elementos, se nombran asi porq no se pueden seleccionar,
     existe una gran variedad de pseudo elementos*/
     content: '';
     display: block;
     width: 15rem;
     height: .5rem;
-    background-color:darkgreen;
+    background-color: darkgreen;
     margin-top: 1rem;
 }
 
-.texto-entrada em{
+.texto-entrada em {
     color: darkorange;
 }
 
+
 /*testimoniales*/
 
-.testimonial{
-    background-color:darkgreen ;
+.testimonial {
+    background-color: darkgreen;
     font-size: 2.5rem;
     padding: 2rem;
-    color:white;
+    color: white;
     border-radius: 2rem;
     line-height: 2;
-    
 }
 
-.testimonial p{
+.testimonial p {
     text-align: end;
-
 }
 
-.testimonial blockquote::before{
+.testimonial blockquote::before {
     content: '';
     background-image: url(../img/comilla.svg);
     width: 4rem;
@@ -305,97 +362,105 @@ img{
     left: -2rem;
 }
 
-.testimonial blockquote{
+.testimonial blockquote {
     position: relative;
     padding-left: 5rem;
 }
 
+
 /*footer*/
-.site-footer{
-    background-color:#333333;
+
+.site-footer {
+    background-color: #333333;
     margin: 0;
-  
 }
 
-.contenedor-footer{
+.contenedor-footer {
     padding: 3rem 0;
     display: flex;
     justify-content: space-between;
 }
 
-.copyright{
+.copyright {
     margin: 0;
     color: white;
 }
 
+
 /*paginas internas*/
+
+
 /*pagina nosotros*/
-.contenido-nosotros{
+
+.contenido-nosotros {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 2rem;
 }
 
-.texto-nosotros blockquote{
+.texto-nosotros blockquote {
     font-weight: 900;
     font-size: 2rem;
     margin: 0;
     padding: 0 0 3rem 3;
-
 }
 
+
 /*pagina anuncio*/
-.resumen-propiedad{
+
+.resumen-propiedad {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+
 /*contacto*/
-label{
+
+label {
     display: block;
     font-weight: 700;
     text-transform: uppercase;
 }
+
 input:not([type="submit"]),
 textarea,
-select{
+select {
     padding: 1rem;
-    display:block;
-    width:97%;
-    background-color:rgb(158, 157, 157) ;
+    display: block;
+    width: 97%;
+    background-color: rgb(158, 157, 157);
     margin-bottom: 2rem;
-    border:none;
+    border: none;
     border-radius: 3px;
 }
 
-input[type="radio"]{
+input[type="radio"] {
     width: auto;
 }
 
-select{
+select {
     -webkit-appearance: none;
     appearance: none;
     max-width: 100%;
 }
 
-textarea{
+textarea {
     height: 20rem;
 }
 
-legend{
+legend {
     font-size: 2rem;
     color: black;
 }
 
-contacto p{
-    font-size:1rem;
+contacto p {
+    font-size: 1rem;
     color: rgba(0, 0, 0, 0.733);
-
 }
-.forma-contacto{
+
+.forma-contacto {
     max-width: 30rem;
     display: flex;
     justify-content: space-between;
-
 }
