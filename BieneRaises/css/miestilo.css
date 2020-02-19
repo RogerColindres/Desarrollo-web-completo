@@ -13,7 +13,7 @@ body{/*selector que se aplica a todos los elementos de un body*/
 
 /*globales*/
 .contenedor{
-    max-width: 120rem;/*toma todo el espacio disponibles sin pasar de 120rem*/
+    max-width: 120rem;/*toma todo el espacio disponibles sin pasar de 120rem o 1200px*/
     margin:0 auto;/*centramos la barra que contiene el icono y la barra de navegacion*/
 }
 
