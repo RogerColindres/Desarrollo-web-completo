@@ -40,3 +40,39 @@ p {
     font-weight: bold;
     text-transform: uppercase;
 }
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: cornflowerblue;
+}
+
+@media (min-width: 500px) {
+    body {
+        background-color: lightcoral;
+    }
+}
+
+@media (min-width: 800px) {
+    body {
+        background-color: wheat;
+    }
+}
+
+h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 600px) {
+    h1 {
+        font-size: 40px;
+    }
+}

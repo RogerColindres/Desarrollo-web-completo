@@ -46,3 +46,11 @@ p {
     font-weight: bold;
     text-transform: uppercase;
 }
+
+@media (min-width:992px) {
+    .entrada-blog img {
+        width: 500px;
+        display: block;
+        margin: 0 auto;
+    }
+}
