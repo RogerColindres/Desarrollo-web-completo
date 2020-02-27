@@ -19,6 +19,7 @@ body {
 /*globales*/
 
 .contenedor {
+    width: 95%;
     max-width: 120rem;
     /*toma todo el espacio disponibles sin pasar de 120rem o 1200px*/
     margin: 0 auto;
@@ -79,12 +80,23 @@ img {
     font-weight: 700;
     text-decoration: none;
     font-size: 1.8rem;
-    padding: 1rem 3rem;
+    /* padding: 1rem 3rem; */
     margin-top: 3rem;
     display: inline-block;
     /*damos la opcion de poder aplicar un ancho a las etiquetas inline como <a> entre*/
     text-align: center;
     border: none;
+    display: block;
+    flex: 0 0 100%;
+    padding: 1rem 0 1rem 0;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+        flex: 0 0 auto;
+        padding: 1rem 3rem;
+    }
 }
 
 .boton:hover {
@@ -97,6 +109,10 @@ img {
 
 .boton-verde {
     background-color: darkgreen;
+}
+
+.btn-padding {
+    padding: 1rem 3rem;
 }
 
 
@@ -128,6 +144,13 @@ img {
     flex-direction: column;
     /*estamos trabajando el contenido en columnas*/
     justify-content: space-between;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .contenido-header {
+        text-align: left;
+    }
 }
 
 .contenido-header h1 {
@@ -138,13 +161,18 @@ img {
 }
 
 .barra {
-    display: flex;
-    /*habilitamos el uso de flexblox*/
-    justify-content: space-between;
-    /*alineacion horizontal*/
-    align-items: center;
-    /*alineacion vertical*/
     padding-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        /*habilitamos el uso de flexblox*/
+        justify-content: space-between;
+        /*alineacion horizontal*/
+        align-items: center;
+        /*alineacion vertical*/
+    }
 }
 
 
@@ -155,7 +183,20 @@ img {
     color: white;
     text-decoration: none;
     font-size: 2rem;
-    margin-right: 2rem;
+    font-size: 2.2rem;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .navegacion a {
+        display: inline-block;
+        font-size: 1.8rem;
+        margin-right: 2rem;
+    }
+    .navegacion a:last-of-type {
+        /*contiene un seudo selector, para eliminar el margen derecho al ultimi elemento de a*/
+        margin-right: 0;
+    }
 }
 
 .navegacion a:hover {
@@ -163,27 +204,29 @@ img {
     color: lawngreen;
 }
 
-.navegacion a:last-of-type {
-    /*contiene un seudo selector, para eliminar el margen derecho al ultimi elemento de a*/
-    margin-right: 0;
-}
-
 
 /**iconos nosotros**/
 
-.iconos-nosotros {
-    display: flex;
-    justify-content: space-between;
-    /*reparte espacio entre los elementos del contenedor
-    mediante flexbox*/
+@media (min-width: 768px) {
+    .iconos-nosotros {
+        display: flex;
+        justify-content: space-between;
+        /*reparte espacio entre los elementos del contenedor
+        mediante flexbox*/
+    }
 }
 
 .iconos {
-    flex-basis: calc(33.3% - 1rem);
     /*sirve para dividir espacios iguales para diferentes elementos,
     ademas para que los elementos se ajusten de manera responsiva al tamaño del contenedor principal*/
     text-align: center;
-    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+    .iconos {
+        flex-basis: calc(33.3% - 1rem);
+        line-height: 1.5;
+    }
 }
 
 .iconos h3 {
@@ -194,20 +237,27 @@ img {
 
 /*Anuncios*/
 
-.contenedor-anuncios {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+@media (min-width: 768px) {
+    .contenedor-anuncios {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }
 
 .anuncio {
     /*flex: flex-grow: para que el contenido cresca, flex-shrink: para que el contenido se haga pequeño, flex-basis: tamaño base;;;*/
-    flex: 0 0 calc(33.3% - 1rem);
     /*flex-shrink: 0;
     flex-basis: calc(33.3% - 1rem);*/
     border: solid gray 2px;
     background-color: #f5f5f5;
     margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .anuncio {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
 }
 
 .contenido-anuncio {
@@ -268,7 +318,7 @@ img {
 }
 
 .contenido-contacto {
-    flex: 1;
+    flex: 0 0 95%;
     /*factor de crecimiento, asigna tamaño de manera equitativa por elemento, */
     color: white;
 }
@@ -281,35 +331,41 @@ img {
 
 /*seccion inferior*/
 
-.seccion-inferior {
-    display: flex;
-    justify-content: space-between;
-}
-
-.seccion-inferior .blog {
-    flex-basis: 60%;
-}
-
-.seccion-inferior .testimoniales {
-    flex-basis: calc(40% - 2rem);
+@media (min-width: 768px) {
+    .seccion-inferior {
+        display: flex;
+        justify-content: space-between;
+    }
+    .seccion-inferior .blog {
+        flex-basis: 60%;
+    }
+    .seccion-inferior .testimoniales {
+        flex-basis: calc(40% - 2rem);
+    }
 }
 
 .entrada-blog {
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .entrada-blog {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .entrada-blog:last-of-type {
     margin-bottom: 0;
 }
 
-.entrada-blog .imagen {
-    flex-basis: 40%;
-}
-
-.entrada-blog .texto-entrada {
-    flex-basis: calc(60% - 3rem);
+@media (min-width: 768px) {
+    .entrada-blog .imagen {
+        flex-basis: 40%;
+    }
+    .entrada-blog .texto-entrada {
+        flex-basis: calc(60% - 3rem);
+    }
 }
 
 .texto-entrada a {
@@ -375,10 +431,26 @@ img {
     margin: 0;
 }
 
+@media (min-width: 768px) {
+    .contenedor-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 .contenedor-footer {
     padding: 3rem 0;
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
+}
+
+.site-footer nav {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .site-footer nav {
+        display: block;
+    }
 }
 
 .copyright {
@@ -392,17 +464,25 @@ img {
 
 /*pagina nosotros*/
 
-.contenido-nosotros {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 2rem;
+@media (min-width: 768px) {
+    .contenido-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+    }
 }
 
 .texto-nosotros blockquote {
     font-weight: 900;
     font-size: 2rem;
     margin: 0;
-    padding: 0 0 3rem 0;
+    padding-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    .texto-nosotros blockquote {
+        padding: 0 0 3rem 0;
+    }
 }
 
 
