@@ -1,8 +1,15 @@
 html {
+    box-sizing: border-box;
     font-size: 62.5%;
     /*resetea para rems donde 1 rems = 10px*/
     /*se utiliza para dejar el uso de pixeles por rems*/
     /*reset para para REMS 62.5% = 10px de 16px, por lo tanto 1 rems = 10px */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 body {
