@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,54 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    
+
 </head>
+
 <body>
+    <header class="site-header">
+        <a href="index.html">
+            <img src="img/logo.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <div class="barra">
+        <nav class="nav">
+            <a href="producto.html">Tienda</a>
+            <a href="nosotros.html">Nosotros</a>
+        </nav>
+    </div>
+
+    <main>
+        <h1>React JS</h1>
+        <div class="contenido contenedor">
+            <div class="imagen-nosotros">
+                <img src="img/3.jpg" alt="">
+            </div>
+            <div class="contenido-nosotros">
+                <p>Etiam eu libero porttitor, pulvinar nisl consectetur, condimentum nisi. Curabitur ut massa in leo elementum iaculis at sed nibh.
+                </p>
+                <form class="formulario-pedido">
+                    <select class="talla campo">
+                        <option value="C">Chica</option>
+                        <option value="M">Mediana</option>
+                        <option value="G">Grande</option>
+                    </select>
+                    <input type="number" min="1" class="cantidad campo">
+                    <input type="submit" class="boton" value="Agregar al carrito">
+
+                </form>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p class="copyright">
+            Front-end Store-Todos los derechos reservados 2020
+        </p>
+    </footer>
 
 </body>
+
 </html>
