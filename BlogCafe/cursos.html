@@ -3,101 +3,107 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog de café</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="css/Normalize.css">
+    <link rel="stylesheet" href="css/Normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Style.css">
+    <title>Blog de Café</title>
 </head>
 
 <body>
-    <header class="site-header">
+    <header class="header">
         <div class="contenedor">
-            <div class="barra">
-                <a href="index.html">
-                    <h1 class="no-margin"><span>BlogDeCafé</span></h1>
+            <div class="barra pdg-3">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
                 </a>
                 <nav class="navegacion">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="cursos.html">Cursos</a>
-                    <a href="contacto.html">Contacto</a>
+                    <a href="Nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+
                 </nav>
             </div>
-            <!--cierre de barra -->
-            <div class="texto-header">
-                <h2 class="no-margin">Blog de café con consejos y cursos </h2>
-                <p>Aprende de los expertos con las mejores recetas y consejos</p>
+        </div>
+        <div class="header__texto centrar-texto">
+            <h2 class="no-margin">
+                Blog de café con consejos y cursos
+            </h2>
+            <p class="no-margin">
+                Aprende de los expertos con las mejores recetas y consejos
+            </p>
+        </div>
+    </header>
+    <main class="contenedor">
+        <h3>Nuestros Proximos Cursos y Talleres</h3>
+        <div class="curso">
+            <div class="curso__imagen">
+                <img src="img/curso1.jpg" alt="Imagen del curso">
+            </div>
+            <div class="curso__informacion">
+                <h4 class="no-margin">Tecnicas de Extracción de café</h4>
+                <p class="curso__label">
+                    Precio: <span class="curso__info">Gratis</span></p>
+                <p class="curso__label">
+                    Cupo: <span class="curso__info">20</span></p>
+                <p class="curso__descripcion">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta fuga repudiandae ad nemo in eveniet neque sapiente aliquid temporibus, provident exercitationem velit eligendi molestiae doloribus? Perspiciatis quis sit voluptates delectus.
+                </p>
             </div>
         </div>
-        <!-- cierre de contenedor -->
-    </header>
-
-    <main class="contenedor">
-        <h2 class="centra-texto">Nuestros proximos cursos y talleres</h2>
-
-        <article class="curso grid">
-            <div class="columnas-4">
-                <img src="img/curso1.jpg" alt="Imagen Curso">
+        <!--Cierre de curso-->
+        <div class="curso">
+            <div class="curso__imagen">
+                <img src="img/curso2.jpg" alt="Imagen del curso">
             </div>
-            <div class="columnas-8">
-                <h4 class="no-magin">Tecnicas de extraccion de cafe</h4>
-                <p class="no-margin">Fechas: <span>20 de abril de 2019</span></p>
-                <p class="no-margin">Precio: <span>Gratis</span></p>
-                <p class="no-margin">Cupos: <span>20</span></p>
-                <p class="descripcion">Curabitur placerat diam odio, sed lacinia lectus ornare id. Nunc velit libero, suscipit quis augue quis, consectetur congue dui. Ut bibendum, ipsum at rutrum pulvinar, velit justo cursus mi, at ultrices justo eros vitae turpis. Fusce arcu
-                    justo, suscipit eu sem sit amet, tempus sodales eros. Donec pellentesque sit amet orci at maximus.
+            <div class="curso__informacion">
+                <h4 class="no-margin">Taller Para Tostar y Moler Granos</h4>
+                <p class="curso__label">
+                    Precio: <span class="curso__info">Gratis</span></p>
+                <p class="curso__label">
+                    Cupo: <span class="curso__info">20</span></p>
+                <p class="curso__descripcion">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta fuga repudiandae ad nemo in eveniet neque sapiente aliquid temporibus, provident exercitationem velit eligendi molestiae doloribus? Perspiciatis quis sit voluptates delectus.
                 </p>
             </div>
-
-        </article>
-        <article class="curso grid">
-            <div class="columnas-4">
-                <img src="img/curso2.jpg" alt="Imagen Curso">
+        </div>
+        <!--Cierre de curso-->
+        <div class="curso">
+            <div class="curso__imagen">
+                <img src="img/curso3.jpg" alt="Imagen del curso">
             </div>
-            <div class="columnas-8">
-                <h4 class="no-magin">Tostar y moler granos</h4>
-                <p class="no-margin">Fechas: <span>20 de abril de 2019</span></p>
-                <p class="no-margin">Precio: <span>Gratis</span></p>
-                <p class="no-margin">Cupos: <span>20</span></p>
-                <p class="descripcion">Curabitur placerat diam odio, sed lacinia lectus ornare id. Nunc velit libero, suscipit quis augue quis, consectetur congue dui. Ut bibendum, ipsum at rutrum pulvinar, velit justo cursus mi, at ultrices justo eros vitae turpis. Fusce arcu
-                    justo, suscipit eu sem sit amet, tempus sodales eros. Donec pellentesque sit amet orci at maximus.
+            <div class="curso__informacion">
+                <h4 class="no-margin">4 Recetas de Café Para Principiantes</h4>
+                <p class="curso__label">
+                    Precio: <span class="curso__info">Gratis</span></p>
+                <p class="curso__label">
+                    Cupo: <span class="curso__info">20</span></p>
+                <p class="curso__descripcion">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta fuga repudiandae ad nemo in eveniet neque sapiente aliquid temporibus, provident exercitationem velit eligendi molestiae doloribus? Perspiciatis quis sit voluptates delectus.
                 </p>
             </div>
-
-        </article>
-        <article class="curso grid">
-            <div class="columnas-4">
-                <img src="img/curso3.jpg" alt="Imagen Curso">
-            </div>
-            <div class="columnas-8">
-                <h4 class="no-magin">Recetas de cafe para principiantes</h4>
-                <p class="no-margin">Fechas: <span>20 de abril de 2019</span></p>
-                <p class="no-margin">Precio: <span>Gratis</span></p>
-                <p class="no-margin">Cupos: <span>20</span></p>
-                <p class="descripcion">Curabitur placerat diam odio, sed lacinia lectus ornare id. Nunc velit libero, suscipit quis augue quis, consectetur congue dui. Ut bibendum, ipsum at rutrum pulvinar, velit justo cursus mi, at ultrices justo eros vitae turpis. Fusce arcu
-                    justo, suscipit eu sem sit amet, tempus sodales eros. Donec pellentesque sit amet orci at maximus.
-                </p>
-            </div>
-
-        </article>
-
+        </div>
+        <!--Cierre de curso-->
     </main>
-
-    <footer class="site-footer">
+    <footer class="footer">
         <div class="contenedor">
             <div class="barra">
-                <p class="no-margin"><span>BlogDeCafé</span></p>
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
                 <nav class="navegacion">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="cursos.html">Cursos</a>
-                    <a href="contacto.html">Contacto</a>
+                    <a href="Nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+
                 </nav>
             </div>
         </div>
-
     </footer>
-
-
 </body>
 
 </html>
