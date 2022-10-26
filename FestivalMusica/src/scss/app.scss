@@ -1,0 +1,12 @@
+/***sintaxis nueva***/
+
+@use 'base';
+@use 'layout' //debemos crear un archivo _index.scss para cada carpeta del scss
+//que tengamos
+
+/***sintaxis vieja***/
+
+//al importar las variables desde el archvo variables se convierten en globales
+//no tenemos que importarlas a los demas archivos scss
+//@import 'base/variables';
+//@import 'contenido/contenido';
