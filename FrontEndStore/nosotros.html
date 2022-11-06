@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <title>FrontEnd Store</title>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -20,71 +22,67 @@
         </a>
     </header>
     <nav class="navegacion">
-        <a class="navegacion__enlace " href="index.html">Tienda</a>
-        <a class="navegacion__enlace navegacion__enlace--activo" href="nosotros.html">Nosotros</a>
+        <a class="naveacion__enlace" href="index.html">Tienda</a>
+        <a class="naveacion__enlace naveacion__enlace--activo" href="nosotros.html">Nosotros</a>
     </nav>
     <main class="contenedor">
-        <h1>
-            Sobre Nosotros
-        </h1>
+        <h1>Sobre Nosotros</h1>
         <div class="nosotros">
-            <div class="nosotros__contenido">
+            <div class="nosotros__texto">
                 <p>
-                    Sed ultricies iaculis velit, id tempus odio lacinia non. Nam ut mollis metus, eu facilisis dui. Phasellus ut varius risus. Nam malesuada erat ac nunc porttitor, nec convallis purus malesuada. Duis pharetra sit amet diam vitae sollicitudin. Donec ut ex
-                    diam. Suspendisse potenti. Quisque aliquam laoreet tellus nec aliquam. In hac habitasse platea dictumst. Nunc hendrerit sapien dui, sit amet viverra sem luctus pretium. Pellentesque non orci metus. Donec ultricies arcu felis, vel interdum
-                    arcu auctor quis.
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution
+                    of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                    Many
+                    desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
+                    and a
+                    search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have
+                    evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
                 </p>
                 <p>
-                    Nunc ullamcorper luctus ligula, at iaculis sem gravida et. Mauris consectetur nisl dolor, quis consequat nulla tempor ut. Praesent ullamcorper semper justo, eu placerat sem malesuada ac. Phasellus faucibus tempus nisi vel blandit. Nulla malesuada molestie
-                    convallis.
+                    Various versions have
+                    evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
                 </p>
             </div>
-            <img class="nosotros__imagen" src="img/nosotros.jpg" alt="imagen nosotros">
+            <img class="nosotros__imagen" src="img/nosotros.jpg" alt="ImagenNosotros">
+
         </div>
     </main>
     <section class="contenedor comprar">
-        <h2 class="comprar__titulo">¿Porque comprar con nosotros?</h2>
-
-        <div class="bloques">
-            <div class="bloque">
-                <img class="bloque__imagen" src="img/icono_1.png" alt="Porque comprar">
-                <h3 class="bloque__titulo">El Mejor Precio</h3>
-                <p>
-                    Nunc ullamcorper luctus ligula, at iaculis sem gravida et. Mauris consectetur nisl dolor, quis consequat nulla tempor ut.
+        <h2 class="compre__titulo">Porqué Comprar con nosotros</h2>
+        <div class="iconos">
+            <div class="icono">
+                <img src="img/icono_1.png" alt="porque comprar">
+                <h3 class="icono__titulo mg0">El mejor Precio</h3>
+                <p class="mg0">Aliquam faucibus metus sed magna accumsan euismod.
                 </p>
             </div>
-            <!--bloque-->
-            <div class="bloque">
-                <img class="bloque__imagen" src="img/icono_2.png" alt="Porque comprar">
-                <h3 class="bloque__titulo">Para Devs</h3>
-                <p>
-                    Nunc ullamcorper luctus ligula, at iaculis sem gravida et. Mauris consectetur nisl dolor, quis consequat nulla tempor ut.
+            <div class="icono">
+                <img src="img/icono_2.png" alt="porque comprar">
+                <h3 class="icono__titulo mg0">Para Devs</h3>
+                <p class="mg0">Aliquam faucibus metus sed magna accumsan euismod.
                 </p>
             </div>
-            <!--bloque-->
-            <div class="bloque">
-                <img class="bloque__imagen" src="img/icono_3.png" alt="Porque comprar">
-                <h3 class="bloque__titulo">Envio Gratis</h3>
-                <p>
-                    Nunc ullamcorper luctus ligula, at iaculis sem gravida et. Mauris consectetur nisl dolor, quis consequat nulla tempor ut.
+            <div class="icono">
+                <img src="img/icono_3.png" alt="porque comprar">
+                <h3 class="icono__titulo mg0">Envio Gratis</h3>
+                <p class="mg0">Aliquam faucibus metus sed magna accumsan euismod.
                 </p>
             </div>
-            <!--bloque-->
-            <div class="bloque">
-                <img class="bloque__imagen" src="img/icono_4.png" alt="Porque comprar">
-                <h3 class="bloque__titulo">La Mejor calidad</h3>
-                <p>
-                    Nunc ullamcorper luctus ligula, at iaculis sem gravida et. Mauris consectetur nisl dolor, quis consequat nulla tempor ut.
+            <div class="icono">
+                <img src="img/icono_4.png" alt="porque comprar">
+                <h3 class="icono__titulo mg0">La mejor calidad</h3>
+                <p class="mg0">Aliquam faucibus metus sed magna accumsan euismod.
                 </p>
             </div>
-            <!--bloque-->
         </div>
-        <!--bloques-->
+
     </section>
     <footer class="footer">
-        <p class="footer__texto">Front End Store - Todos los derechos reservados 2022</p>
+        <p class="footer__texto">front end store - todos los derechos reservados 2022.</p>
     </footer>
-
 </body>
 
 </html>
