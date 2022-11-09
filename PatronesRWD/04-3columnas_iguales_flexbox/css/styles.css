@@ -38,15 +38,17 @@ h1 {
     text-transform: uppercase;
 }
 
-
 /** CODIGO AQUI **/
-
 @media (min-width: 768px) {
-    .tres-columnas {
+    .tres__columnas {
         display: flex;
         justify-content: space-between;
+        gap: 1rem;
+
     }
+
     .entrada-blog {
+        flex-basis: calc(33.3% - 1rem);
         flex: 0 0 calc(33.3% - 1rem);
     }
 }

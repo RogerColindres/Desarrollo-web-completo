@@ -38,13 +38,11 @@ h1 {
     text-transform: uppercase;
 }
 
-
 /** CODIGO AQUI **/
-
 @media (min-width: 768px) {
-    .tres-columnas {
+    .tres__columnas {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        column-gap: 2rem;
+        column-gap: 1rem;
     }
 }

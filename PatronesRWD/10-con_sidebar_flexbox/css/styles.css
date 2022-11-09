@@ -47,20 +47,18 @@ p {
     text-transform: uppercase;
 }
 
-
 /** CODIGO AQUI **/
-
 @media (min-width: 768px) {
-    .con-sidebar {
+    .cont-sidebarf {
         display: flex;
         justify-content: space-between;
-        gap: 2rem;
     }
-    aside {
-        flex: 1;
-        /*factor de crecimiento*/
+
+    .cont-sidebarf article {
+        flex-basis: calc(75% - 1rem);
     }
-    article {
-        flex: 3;
+
+    .cont-sidebarf aside {
+        flex-basis: calc(25% - 1rem);
     }
 }

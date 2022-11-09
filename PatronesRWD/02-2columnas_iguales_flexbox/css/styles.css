@@ -29,25 +29,35 @@ h1 {
 }
 
 .entrada-blog a {
-    display: inline-block;
+    display: block;
     background-color: #2196F3;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
+    border-radius: 1rem;
 }
 
+@media (min-width: 768px) {
+    .entrada-blog a {
+        display: inline;
+        width: auto;
+    }
+}
 
 /** CODIGO AQUI **/
-
 @media (min-width: 768px) {
-    .dos-columnas {
+    .dos__columnas {
         display: flex;
         justify-content: space-between;
-        gap: 2rem;
+        gap: 1rem;
     }
+
+    /*de esta forma se daba espacio entre elementos en flexbox*/
+    /*tiene mucho mayor soporte*/
     .entrada-blog {
-        flex: 0 0 calc(50% - 1rem);
+        flex-basis: calc(50% - 1rem);
+        flex: 0 0 calc(50% -1rem);
     }
 }

@@ -49,19 +49,17 @@ p {
 
 
 /** CODIGO AQUI **/
-
-
-/**cambios de diseño por media queries**/
-
 @media (min-width: 768px) {
-    .layout-shifter {
+    .layout-shifterg {
         display: grid;
         grid-template-areas: "contenido" "inferior";
     }
-    .sidebar {
+
+    .sidebarg {
         grid-area: inferior;
     }
-    .contenido-principal {
+
+    .contenido-principalg {
         grid-area: contenido;
         display: grid;
         grid-template-areas: "entrada1 entrada2";
@@ -70,17 +68,20 @@ p {
     }
 }
 
-@media (min-width: 992px) {
-    .layout-shifter {
+@media (min-width: 920px) {
+    .layout-shifterg {
         grid-template-areas: "contenido sidebar";
         column-gap: 2rem;
     }
-    .sidebar {
+
+    .sidebarg {
         grid-area: sidebar;
     }
-    .contenido-principal {
+
+    .contenido-principalg {
         grid-area: contenido;
         grid-template-areas: "entrada1" "entrada2";
         grid-template-columns: unset;
+
     }
 }
