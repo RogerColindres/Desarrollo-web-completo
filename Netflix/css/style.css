@@ -1,0 +1,463 @@
+:root{
+    /***Colores***/
+    --rojoBoton: #f40612;
+    --negro: #000;
+    --blanco: #fff;
+    --grisBorde: #303030;
+    --rojoLogo: #d81f26;
+    --grisfuentefooter: #737373;
+    /***Fuente***/
+    --fuentePrincipal:Arial, Helvetica, sans-serif;
+}
+
+html{
+    /***seteamos a rem 10px = 1rem***/
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+p{
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+}
+
+h1{
+    font-weight: bold;
+}
+
+h2,
+p{
+    font-weight: normal;
+}
+
+img{
+    width: 100%;
+}
+/***Utilidades***/
+.pdng-bton{
+    padding-bottom: 5rem;
+}
+
+/***contenedores***/
+.contenedorHeader{
+    max-width: 95rem;
+    width: 90%;
+    margin: 0 auto;
+}
+.contenedorBarra{
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+.contenedor-main{
+    width: min(90%, 100rem);
+    margin: 0 auto;
+}
+/***botones***/
+.btnPrincipal,
+.btnSelect{
+    font-size: 1.4rem;
+}
+
+.btnPrincipal{
+    background-color: var(--rojoBoton);
+    color: var(--blanco);
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0 1.5rem;
+    font-weight: bold;
+}
+.btnPrincipal:hover{
+    cursor: pointer;
+}
+.btnSelect{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: var(--blanco);
+    font-family: var(--fuentePrincipal);
+    border-radius: 0.3rem;
+    border-color: var(--blanco);
+    padding: 0 1.5rem;
+    width: 100%;
+}
+.btnPrincipal,
+.btnSelect{
+    font-size: 1.4rem;
+    padding: 0 0.5rem;
+}
+
+@media (min-width: 768px ) {
+    .btnPrincipal,
+    .btnSelect{
+        font-size: 1.6rem;
+        padding: 0 2rem;
+    }
+}
+/***Logo***/
+.logo{
+    width: 11.5rem;
+    height: 2.8rem;
+}
+@media (min-width: 768px ) {
+    .logo{
+        width: 14rem;
+        height: 3.7rem;
+    }
+}
+
+/***Header***/
+.header{
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 55.5rem;
+    border-bottom: 0.8rem solid var(--grisBorde);
+    position: relative;
+}
+@media (min-width: 768px ) {
+    .header{
+        height:68rem ;
+    }
+}
+
+.header--sombra{
+    position: absolute;
+    background-image: linear-gradient(0deg,rgba(0,0,0,.9) 0,transparent 60%,rgba(0,0,0,.9));
+    width: 100%;
+    height: 100%;
+}
+
+.barraHeader{
+    display: flex;
+    padding-top: 3rem;
+    justify-content: space-between;
+}
+
+@media (min-width: 768px ) {
+    .barraHeader{
+        justify-content: space-between;
+    }
+
+}
+
+.barraHeader__login{
+    display: flex;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px ) {
+    .barraHeader__login{
+        gap: 3rem;
+    }
+}
+
+.headercontenido__texto{
+    text-align: center;
+    padding-top: 8rem;
+    
+}
+.headercontenido__texto h1{
+    margin: 0;
+    font-size: 2.8rem;
+}
+.headercontenido__texto h2{
+    margin: 1.6rem 0;
+    font-size: 1.8rem;
+}
+
+.headercontenido__texto p{
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+@media (min-width: 768px ) {
+    .headercontenido__texto{
+        padding-top: 13rem;
+    }
+
+    .headercontenido__texto h1{
+        margin: 0 14rem;
+        font-size: 5rem;
+    }
+
+    .headercontenido__texto h2{
+        font-size: 2.6rem;
+    }
+    .headercontenido__texto p{
+        font-size: 1.9rem;
+    }
+}
+/***Probando formas de hacer el formulario de ingreso***/
+/**
+.hcontenido__formulario{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hcontenido__formulario input[type="email"]{
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: 4.8rem;
+    padding: 0 1rem;
+}
+
+.hcontenido__formulario input[type="submit"]{
+    width: auto;
+    margin-top: 1.8rem;
+    padding: 1rem 1.6rem;
+}
+
+@media (min-width: 768px ) {
+    .hcontenido__formulario{
+        display: flex;
+        width: min(60rem, 100%);
+    }
+    .hcontenido__formulario input[type="submit"]{
+        margin: 0;
+    }
+}**/
+.hcontenido__formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(63rem ,100%);
+    margin: 0 auto;
+    gap: 1.8rem;
+}
+
+@media (min-width: 768px ) {
+    .hcontenido__formulario{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+    }
+}
+
+.hcontenido__formulario input[type="email"]{
+    width: 100%;
+    padding: 1.6rem;
+    font-family: var(--fuentePrincipal);
+}
+
+.hcontenido__formulario input[type="submit"]{
+    padding: 1.6rem 1rem;
+}
+
+@media (min-width: 768px ) {
+    .hcontenido__formulario input[type="submit"]{
+        flex-basis: calc(30% - 0.1rem);
+        border-radius: 0;
+        font-size: 2.3rem;
+        padding: 1.7rem 0;
+
+    }
+    .hcontenido__formulario input[type="email"]{
+        flex-basis: calc(70%);
+        padding: 2rem 1rem;
+    }
+}
+
+/***Contenido principal***/
+.contenido-principal{
+    background-color: var(--negro);
+}
+
+.entrada{
+    border-bottom: 0.8rem solid var(--grisBorde);
+    text-align: center;
+}
+.entrada--contenido{
+    padding: 4rem 0;
+}
+
+.entrada--texto h1{
+    margin: 0;
+    font-size: 2.6rem;
+}
+
+.entrada--texto p{
+    font-size: 1.8rem;
+}
+
+@media (min-width: 768px ) {
+    .entrada--contenido{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .row__reverse{
+        flex-direction: row-reverse;
+    }
+    .entrada--imagen{
+        width: 50%;
+        height: 50%;
+    }
+    .entrada--texto h1{
+        margin: 0;
+        font-size: 5rem;
+    }
+    
+    .entrada--texto p{
+        font-size: 2.6rem;
+    }
+    
+}
+/***Seccion Preguntas Frecuentes***/
+.preguntas{
+    background-color: var(--negro);
+    border-bottom: 0.8rem solid var(--grisBorde);
+    text-align: center;
+}
+
+.contenedor-preguntas{
+    width: min(100rem, 100%);
+    margin: 0 auto;
+    padding-top: 5rem;
+    padding-bottom: 0.5rem;
+    
+}
+@media (min-width: 768px ) {
+    .contenedor-preguntas{
+        width: min(70rem ,100%);
+        padding-bottom: 3rem;
+    }
+}
+.lista ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lista--item{
+    background-color: var(--grisBorde);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0rem  1.8rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    
+}
+.lista--item p{
+    margin: 1.8rem 0;
+}
+.lista--item svg{
+    width: 3rem;
+    height: 3rem;
+}
+
+@media (min-width: 768px ) {
+    .lista--item{
+        font-size: 2.8rem;
+    }
+    .lista--item p{
+        margin: 2rem 0;
+    }
+    .lista--item svg{
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+.hcontenido-preguntas{
+    font-size: 1.8rem;
+}
+@media (min-width: 768px ) {
+    .hcontenido-preguntas{
+        font-size: 1.92rem;
+    }
+}
+
+/***Footer***/
+.contendor-footer{
+    width: min(60rem, 80%);
+    margin: 0 auto;
+    padding-top: 7rem;
+    text-align: start;
+}
+@media (min-width: 768px ) {
+    .contendor-footer{
+        width: min(100rem, 90%);
+    }
+}
+
+.footer{
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+}
+.footer p{
+    margin: 0 0 3rem 0;
+    color: var(--grisfuentefooter);
+}
+
+.footer p a{
+    text-decoration: none;
+    color: var(--grisfuentefooter);
+}
+.footer p a:hover{
+    text-decoration: underline;
+}
+
+.foorter-lista {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.foorter-lista li{
+    display: inline-block;
+}
+
+.footer-lista--enlace{
+    display: inline-block;
+    color: var(--grisfuentefooter);
+    font-family: var(--fuentePrincipal);
+    text-decoration: none;
+    list-style: none;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    width: 16rem;
+}
+
+.footer-lista--enlace:hover{
+    text-decoration: underline;
+}
+
+@media (min-width: 768px ) {
+    .footer-lista--enlace{
+        width: 22rem;
+    }
+}
+
+.footer--lenguaje select{
+    width: auto;
+    padding: 1.8rem 3rem;
+    color: var(--grisfuentefooter);
+    border-color: var(--grisfuentefooter);
+    margin-top: 2rem;
+}
+
+.footer--pais p{
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-size: 1.3rem;
+}
+
+
+
+
