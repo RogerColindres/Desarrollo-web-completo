@@ -1,4 +1,6 @@
+//Usando VAriables
 @use 'variables' as v;
+
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -11,8 +13,8 @@ html {
 }
 
 body {
-    font-size: 1.6rem;
     font-family: v.$fuente_principal;
+    font-size: 1.6rem;
 }
 
 p {
@@ -23,6 +25,7 @@ p {
 .contenedor {
     width: 95%;
     max-width: 120rem;
+    width: min(95%, 120rem);
     margin: 0 auto;
 }
 

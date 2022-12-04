@@ -1,28 +1,30 @@
-const { src, dest, watch } = require('gulp');
-//importamos la funcionalidad de sass
-const sass = require('gulp-sass')(require('sass'));
-//creando y llamando tareas con gulp
-//se comunican con la api de gulp y realiza ciertas acciones
-const plumber = require('gulp-plumber');
-//evitando que el workflow se detenga ante cualquier error
-//no detenemos la ejecuancion del workflow
-//instalamos gulp-plumber con npm i --save-dev gulp-plumber
-/***vamos a decirle que escuche los cambios en los demas archivos***/
+//gulp es una herramienta para automatizar tareas
+//cada tarea seria una funcion de javascript
+
+//extraemos toda la funcionalidad de gulp es una variable (hacemos algo similar a import/export)
+const { src, dest, watch } = require("gulp");
+const sass = require("gulp-sass")(require("sass"));
+const plumber = require('gulp-plumber')
+
+//Tarea para compilar SASS con GULP
 function css(callback) {
+    src('src/scss/**/*.scss')//identificar el archivo de SASS
+        .pipe(plumber())
+        .pipe(sass())//Compilarlo
+        .pipe(dest("build/css"));//Guardarla o almacenarla
 
-    src('src/scss/**/*.scss') //1. identificar el archivo sass a compilar
-        .pipe(plumber()) //evitamos que se detenga el workflow ante cualquier error
-        .pipe(sass()) //2. compilar el archico sass y crear la hoja de css
-        .pipe(dest('build/css')) //3. almacenamos o guardamos el sass compilado(css)
-
-    callback();
+    callback();//callback le avisa a gulp cuando llegamos al final de la tarea
 }
 
-//funcion para escuchar constantemente los cambios o compilar automaticamente
-function dev(callback) {
-    watch('src/scss/**/*.scss', css);
-    callback();
+function dev(done) {
+    watch('src/scss/**/*.scss', css)
+    done();
 }
-//haciendo disponible una tarea
+
+
 exports.css = css;
 exports.dev = dev;
+//NPX se instala de manera automatica con nodejs y nos permite ejecutar paquetes sin necesidad de instalarlos globalmente.
+//para llamar con NPX se usa npx gulp nombre de la tarea
+
+//para mandar a llamar haciendo uso de npm tenemos que pasarle en package.json en la parte de scripts lo que vamos a ejecutar

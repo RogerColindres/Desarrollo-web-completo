@@ -1,12 +1,16 @@
-/***sintaxis nueva***/
+//para distinguir el archivo principal de SASS a los demas se hace poniendo un _ (guion bajo) antes del nombre del archivo, eso le indica a la API de SASS que ese archivo se va a incluir en otro y que no es necesario crear otra oja de estilos
+//Sass tiene dos formas de incluir archivos en otros archivos
+//***@import (forma anterior)***
+//@import nos vuelve los documentos globales, variables, funciones, ect...
+// @import 'base/variables';
+// @import 'contenido/contenido';
+//siempre se importa de acorde a la importancia del docuemnto (en orden)
+//ejemplo primero las variables
 
+//***@use y @forward (forma nueva)***
+//la nueva forma requiere que se creen archvos index.css por carpeta de SASS
+//del archivo index.scss apunta a los otros archivos de la carpeta correspondiente
+//el archivo app.scss apunta a la carpeta de scss donde esta el condigo a usar
+//tienes que colocar @use donde necesites codigo de otro documento scss
 @use 'base';
-@use 'layout' //debemos crear un archivo _index.scss para cada carpeta del scss
-//que tengamos
-
-/***sintaxis vieja***/
-
-//al importar las variables desde el archvo variables se convierten en globales
-//no tenemos que importarlas a los demas archivos scss
-//@import 'base/variables';
-//@import 'contenido/contenido';
+@use 'layout';
