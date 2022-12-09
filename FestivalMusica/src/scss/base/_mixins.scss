@@ -23,13 +23,39 @@
 
 //Mixins para media queries
 @mixin telefono {
-    @media (min-width: 480px) {
+    @media (min-width: v.$telefono) {
+        //@content nos permite inyectar propiedades css desde donde llamamos al mixin, se sustituye el content con el contenido que le pasamos donde realizamos el llamado.
+        //pueden ser cualquier numero de lineas de codigo
         @content;
     }
 }
 
 @mixin tablet {
-    @media (min-width: 768px) {
-        @content
+    @media (min-width: v.$tablet) {
+        @content;
     }
+}
+
+@mixin escritorio {
+    @media (min-width: v.$escritorio) {
+        @content;
+    }
+}
+
+@mixin escritorioXL {
+    @media (min-width: v.$escritorioXL) {
+        @content;
+    }
+}
+
+@mixin grid($columnas, $espaciado) {
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espaciado;
+}
+
+@mixin reset-lista {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
